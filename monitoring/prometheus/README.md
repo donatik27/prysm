@@ -5,8 +5,8 @@
  - (optional) [Grafana](https://grafana.com/grafana/download) (For better graphs)
  - (optional) [Setup prometheus+grafana](https://prometheus.io/docs/visualization/grafana/)
 
-## Start scrapping services
-To start scrapping with prometheus you must create or edit the prometheus config file and add all the services you want to scrap, like these:
+## Start scraping services
+To start scraping with prometheus you must create or edit the prometheus config file and add all the services you want to scrap, like these:
 
 ```diff
 global:
@@ -42,5 +42,5 @@ Now, you can add the prometheus server as a data source on grafana and start bui
 
 ## How to add additional metrics
 
-The prometheus service export the metrics from the `DefaultRegisterer` so just need to register your metrics with the `prometheus` or `promauto` libraries.
+The prometheus service exports the metrics from the `DefaultRegisterer` so you just need to register your metrics with the `prometheus` or `promauto` libraries.
 To know more [Go application guide](https://prometheus.io/docs/guides/go-application/)
