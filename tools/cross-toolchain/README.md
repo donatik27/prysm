@@ -20,7 +20,7 @@ docker build -t gcr.io/prysmaticlabs/rbe-worker:latest tools/cross-toolchain/.
 docker push gcr.io/prysmaticlabs/rbe-worker:latest 
 ```
 
-Note: You must configured your gcr access credentials to push to gcr.io/prysmaticlabs. Run `gcloud auth configure-docker` or contact SRE team for push access.
+Note: You must configure your gcr access credentials to push to gcr.io/prysmaticlabs. Run `gcloud auth configure-docker` or contact SRE team for push access.
 
 2) Note the docker image sha256 digest from the recently pushed image or use the latest one available.
 
